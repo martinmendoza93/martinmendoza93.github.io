@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio personal de Martín Mendoza, desarrollador full stack .NET"
+    />
+    <title>Martín Mendoza | Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="#home">MM.</a>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Navegación principal">
+          <a href="#home">Inicio</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#arquitectura">Arquitectura</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="eyebrow">Analista de Sistemas & Desarrollador</span>
+            <h1>
+              Hola, soy <span>Martín Mendoza</span>
+            </h1>
+            <p>
+              Diseño y construyo sistemas de software robustos. Me especializo en
+              descomponer problemas reales con arquitectura limpia, dominio bien
+              modelado y soluciones escalables.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+              <a class="btn btn-secondary" href="#contacto">Contactar</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-hidden="true">
+            <div class="hero-avatar">
+              <span>MM</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stack-section">
+        <div class="container">
+          <p class="section-label">Stack tecnológico principal</p>
+          <div class="chip-list">
+            <span class="chip">C# .NET</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Docker</span>
+            <span class="chip">React & Tailwind</span>
+            <span class="chip">GitHub Actions</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="projects-section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Casos de estudio</h2>
+            <p>Sistemas en producción y proyectos de arquitectura a escala.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-visual">
+                <h3>HelpDesk</h3>
+              </div>
+              <div class="project-body">
+                <h4>Sistema de HelpDesk Institucional</h4>
+                <p>
+                  Enrutamiento automatizado de tickets y clasificación basada en
+                  diccionarios para optimizar el soporte.
+                </p>
+                <div class="tag-list">
+                  <span>.NET API</span>
+                  <span>Routing Engine</span>
+                </div>
+                <a href="https://github.com/martinmendoza93" target="_blank" rel="noreferrer">Ver repositorio</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-visual">
+                <h3>Zarcil</h3>
+              </div>
+              <div class="project-body">
+                <h4>Zarcil ERP modular</h4>
+                <p>
+                  Proyecto de software a gran escala con módulos de inventario,
+                  compras, logística inversa y configuraciones dinámicas.
+                </p>
+                <div class="tag-list">
+                  <span>Clean Arch</span>
+                  <span>PostgreSQL</span>
+                </div>
+                <a href="https://github.com/martinmendoza93" target="_blank" rel="noreferrer">Ver repositorio</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-visual">
+                <h3>Nativa</h3>
+              </div>
+              <div class="project-body">
+                <h4>Punto de venta & catálogo Nativa</h4>
+                <p>
+                  Aplicación web con interfaces separadas para catálogo y
+                  checkout, con despliegues continuos en la nube.
+                </p>
+                <div class="tag-list">
+                  <span>React</span>
+                  <span>CI/CD</span>
+                </div>
+                <a href="https://github.com/martinmendoza93" target="_blank" rel="noreferrer">Ver demo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="arquitectura" class="architecture-section">
+        <div class="container">
+          <div class="section-heading alt">
+            <h2>Mi filosofía arquitectónica</h2>
+            <p>Descomponiendo la complejidad antes de escribir la primera línea de código.</p>
+          </div>
+          <div class="architecture-stack">
+            <div class="layer layer-top">Presentación<br /><strong>MVC / API Endpoints</strong></div>
+            <div class="connector"></div>
+            <div class="layer layer-mid">El flujo<br /><strong>Vertical Slices (CQRS)</strong></div>
+            <div class="connector"></div>
+            <div class="layer layer-bottom">Núcleo (DDD)<br /><strong>Dominio & Aplicación</strong></div>
+            <div class="connector"></div>
+            <div class="layer layer-base">Infraestructura<br /><strong>EF Core & PostgreSQL</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <a class="brand" href="#home">MM.</a>
+          <p>© <span id="year"></span> Martín Mendoza. Managua, Nicaragua.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/martinmendoza93" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:martinmendoza93@gmail.com">Enviar email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
