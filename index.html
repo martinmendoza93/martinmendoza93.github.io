@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portafolio personal de Martín Mendoza, desarrollador full stack .NET"
+      content="Martín Mendoza — Analista de Sistemas y Especialista en Arquitectura de Software (.NET / Full Stack). Clean Architecture, DDD, Vertical Slices y CQRS."
     />
-    <title>Martín Mendoza | Portafolio</title>
+    <title>Martín Mendoza | Arquitectura de Software .NET</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -27,131 +27,297 @@
         </button>
         <nav class="site-nav" aria-label="Navegación principal">
           <a href="#home">Inicio</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#arquitectura">Arquitectura</a>
+          <a href="#filosofia">Filosofía</a>
+          <a href="#stack">Stack</a>
+          <a href="#casos">Casos</a>
           <a href="#contacto">Contacto</a>
         </nav>
       </div>
     </header>
 
-    <main id="home">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <span class="eyebrow">Analista de Sistemas & Desarrollador</span>
-            <h1>
-              Hola, soy <span>Martín Mendoza</span>
-            </h1>
-            <p>
-              Diseño y construyo sistemas de software robustos. Me especializo en
-              descomponer problemas reales con arquitectura limpia, dominio bien
-              modelado y soluciones escalables.
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-atmosphere" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-content reveal is-visible">
+            <p class="hero-role">
+              Analista de Sistemas &amp; Especialista en Arquitectura de Software
+              <span>(.NET / Full Stack)</span>
+            </p>
+            <h1 class="hero-name">Martín Mendoza</h1>
+            <p class="hero-bio">
+              No me limito a escribir código; traduzco requerimientos empresariales
+              complejos en sistemas resilientes. Combino los fundamentos formales de
+              la Ingeniería de Software con la ejecución técnica de arquitecturas
+              modernas en el ecosistema .NET para construir plataformas que escalan,
+              son mantenibles y resuelven problemas reales.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+              <a class="btn btn-primary" href="#casos">Ver casos de estudio</a>
               <a class="btn btn-secondary" href="#contacto">Contactar</a>
             </div>
           </div>
-          <div class="hero-card" aria-hidden="true">
-            <div class="hero-avatar">
-              <span>MM</span>
+          <div class="hero-mark reveal is-visible" aria-hidden="true">
+            <span class="hero-initials">MM</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="filosofia" class="philosophy-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">Mi filosofía de desarrollo</p>
+            <h2>El código es el resultado de un proceso de diseño</h2>
+            <p>
+              En cada proyecto aplico un enfoque metódico de tres fases para evitar
+              el deterioro del software a largo plazo.
+            </p>
+          </div>
+
+          <ol class="philosophy-grid">
+            <li class="philosophy-phase reveal">
+              <span class="phase-index">01</span>
+              <h3>Ingeniería y Modelado</h3>
+              <p>
+                Análisis de requerimientos y modelado del sistema para definir
+                fronteras claras y casos de uso antes de tocar el IDE, asegurando que
+                la solución responda al modelo de negocio real.
+              </p>
+            </li>
+            <li class="philosophy-phase reveal">
+              <span class="phase-index">02</span>
+              <h3>Diseño del Dominio</h3>
+              <p>
+                Aislamiento estricto de las reglas de negocio, uso extensivo de Value
+                Objects para evitar la obsesión por primitivos y definición de Bounded
+                Contexts para garantizar alta cohesión.
+              </p>
+            </li>
+            <li class="philosophy-phase reveal">
+              <span class="phase-index">03</span>
+              <h3>Implementación de Arquitectura Limpia</h3>
+              <p>
+                Despliegue de Vertical Slice Architecture, Clean Architecture y CQRS,
+                asegurando sistemas desacoplados, altamente testeables y listos para
+                entornos Multi-Tenant.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="stack" class="stack-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">Stack tecnológico</p>
+            <h2>Habilidades core</h2>
+            <p>
+              Del modelado al despliegue: herramientas y prácticas que uso para
+              construir plataformas .NET y full stack.
+            </p>
+          </div>
+
+          <div class="stack-groups">
+            <div class="stack-group reveal">
+              <h3>Ingeniería &amp; Diseño</h3>
+              <div class="chip-list">
+                <span class="chip">Domain-Driven Design (DDD)</span>
+                <span class="chip">Análisis de Requerimientos</span>
+                <span class="chip">Modelado de Sistemas</span>
+                <span class="chip">Test-Driven Development (TDD)</span>
+              </div>
+            </div>
+            <div class="stack-group reveal">
+              <h3>Arquitectura</h3>
+              <div class="chip-list">
+                <span class="chip">Clean Architecture</span>
+                <span class="chip">Vertical Slices</span>
+                <span class="chip">Hexagonal Architecture</span>
+                <span class="chip">CQRS (MediatR)</span>
+                <span class="chip">Patrones de Diseño</span>
+              </div>
+            </div>
+            <div class="stack-group reveal">
+              <h3>Backend</h3>
+              <div class="chip-list">
+                <span class="chip">C#</span>
+                <span class="chip">.NET (Core / 8 / 9)</span>
+                <span class="chip">ASP.NET Core</span>
+                <span class="chip">Entity Framework Core</span>
+              </div>
+            </div>
+            <div class="stack-group reveal">
+              <h3>Infraestructura &amp; Base de Datos</h3>
+              <div class="chip-list">
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">SQLite</span>
+                <span class="chip">Docker</span>
+                <span class="chip">Diseño Multi-Tenant</span>
+              </div>
+            </div>
+            <div class="stack-group reveal">
+              <h3>DevOps &amp; Entornos</h3>
+              <div class="chip-list">
+                <span class="chip">GitHub Actions</span>
+                <span class="chip">GitLab CI</span>
+                <span class="chip">Vercel</span>
+                <span class="chip">Entornos reproducibles</span>
+              </div>
+            </div>
+            <div class="stack-group reveal">
+              <h3>Frontend</h3>
+              <div class="chip-list">
+                <span class="chip">React</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">Tailwind CSS</span>
+                <span class="chip">shadcn/ui</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="stack-section">
+      <section id="casos" class="projects-section">
         <div class="container">
-          <p class="section-label">Stack tecnológico principal</p>
-          <div class="chip-list">
-            <span class="chip">C# .NET</span>
-            <span class="chip">PostgreSQL</span>
-            <span class="chip">Docker</span>
-            <span class="chip">React & Tailwind</span>
-            <span class="chip">GitHub Actions</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="proyectos" class="projects-section">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Casos de estudio</h2>
-            <p>Sistemas en producción y proyectos de arquitectura a escala.</p>
+          <div class="section-heading reveal">
+            <p class="section-label">Open Source</p>
+            <h2>Casos de estudio y arquitectura en código</h2>
+            <p>
+              Tres proyectos públicos que demuestran cómo aplico arquitectura,
+              seguridad y entornos reproducibles en la práctica.
+            </p>
           </div>
 
           <div class="project-grid">
-            <article class="project-card">
+            <article class="project-card reveal">
               <div class="project-visual">
-                <h3>HelpDesk</h3>
+                <span class="project-kicker">.NET 10</span>
+                <h3>Portafolio</h3>
               </div>
               <div class="project-body">
-                <h4>Sistema de HelpDesk Institucional</h4>
-                <p>
-                  Enrutamiento automatizado de tickets y clasificación basada en
-                  diccionarios para optimizar el soporte.
+                <h4>Portafolio .NET (Clean Architecture &amp; Vertical Slices)</h4>
+                <p class="project-lead">
+                  Sistema en producción construido para demostrar el dominio práctico
+                  de arquitecturas modernas y escalables en .NET.
                 </p>
+                <dl class="project-points">
+                  <div>
+                    <dt>Problema</dt>
+                    <dd>
+                      El patrón MVC monolítico por capas acopla lógicas desconectadas
+                      y dificulta el mantenimiento a medida que el software crece
+                      (Big Ball of Mud).
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Solución</dt>
+                    <dd>
+                      Vertical Slice Architecture junto con CQRS. Cada caso de uso
+                      vive aislado con su propio modelo, manejador y vista,
+                      garantizando alta cohesión.
+                    </dd>
+                  </div>
+                </dl>
                 <div class="tag-list">
-                  <span>.NET API</span>
-                  <span>Routing Engine</span>
-                </div>
-                <a href="https://github.com/martinmendoza93" target="_blank" rel="noreferrer">Ver repositorio</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-visual">
-                <h3>Zarcil</h3>
-              </div>
-              <div class="project-body">
-                <h4>Zarcil ERP modular</h4>
-                <p>
-                  Proyecto de software a gran escala con módulos de inventario,
-                  compras, logística inversa y configuraciones dinámicas.
-                </p>
-                <div class="tag-list">
-                  <span>Clean Arch</span>
+                  <span>Vertical Slices</span>
+                  <span>CQRS / MediatR</span>
                   <span>PostgreSQL</span>
                 </div>
-                <a href="https://github.com/martinmendoza93" target="_blank" rel="noreferrer">Ver repositorio</a>
+                <a
+                  class="project-link"
+                  href="https://github.com/martinmendoza93/Portafolio"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Ver repositorio</a
+                >
               </div>
             </article>
 
-            <article class="project-card">
-              <div class="project-visual">
-                <h3>Nativa</h3>
+            <article class="project-card reveal">
+              <div class="project-visual project-visual-alt">
+                <span class="project-kicker">Monorepo</span>
+                <h3>Template</h3>
               </div>
               <div class="project-body">
-                <h4>Punto de venta & catálogo Nativa</h4>
-                <p>
-                  Aplicación web con interfaces separadas para catálogo y
-                  checkout, con despliegues continuos en la nube.
+                <h4>Clean Architecture Monorepo Template</h4>
+                <p class="project-lead">
+                  Plantilla fundacional pública para arrancar proyectos empresariales
+                  listos para producción.
                 </p>
+                <dl class="project-points">
+                  <div>
+                    <dt>Características</dt>
+                    <dd>
+                      Web API en .NET 8 bajo Clean Architecture, SQLite, autenticación
+                      con ASP.NET Core Identity + JWT y panel admin en React + Vite
+                      con shadcn UI.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Impacto</dt>
+                    <dd>
+                      Estandariza la configuración inicial aplicando principios SOLID
+                      y separación de responsabilidades (SoC) por defecto.
+                    </dd>
+                  </div>
+                </dl>
                 <div class="tag-list">
-                  <span>React</span>
-                  <span>CI/CD</span>
+                  <span>Clean Architecture</span>
+                  <span>JWT / Identity</span>
+                  <span>React + Vite</span>
                 </div>
-                <a href="https://github.com/martinmendoza93" target="_blank" rel="noreferrer">Ver demo</a>
+                <a
+                  class="project-link"
+                  href="https://github.com/martinmendoza93/clean-architecture-template"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Ver repositorio</a
+                >
               </div>
             </article>
-          </div>
-        </div>
-      </section>
 
-      <section id="arquitectura" class="architecture-section">
-        <div class="container">
-          <div class="section-heading alt">
-            <h2>Mi filosofía arquitectónica</h2>
-            <p>Descomponiendo la complejidad antes de escribir la primera línea de código.</p>
-          </div>
-          <div class="architecture-stack">
-            <div class="layer layer-top">Presentación<br /><strong>MVC / API Endpoints</strong></div>
-            <div class="connector"></div>
-            <div class="layer layer-mid">El flujo<br /><strong>Vertical Slices (CQRS)</strong></div>
-            <div class="connector"></div>
-            <div class="layer layer-bottom">Núcleo (DDD)<br /><strong>Dominio & Aplicación</strong></div>
-            <div class="connector"></div>
-            <div class="layer layer-base">Infraestructura<br /><strong>EF Core & PostgreSQL</strong></div>
+            <article class="project-card reveal">
+              <div class="project-visual project-visual-base">
+                <span class="project-kicker">DevOps</span>
+                <h3>Blueprint</h3>
+              </div>
+              <div class="project-body">
+                <h4>Dev Methodology Blueprint</h4>
+                <p class="project-lead">
+                  Plantilla de infraestructura para estandarizar entornos de
+                  desarrollo locales.
+                </p>
+                <dl class="project-points">
+                  <div>
+                    <dt>Problema</dt>
+                    <dd>
+                      Pérdida de tiempo en el onboarding y discrepancias de
+                      dependencias entre máquinas locales y servidores de producción.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Solución</dt>
+                    <dd>
+                      Entorno reproducible basado en contenedores: clonar, abrir y
+                      levantar servicios sin configuración artesanal, con paridad
+                      entre desarrollo, CI/CD y pruebas.
+                    </dd>
+                  </div>
+                </dl>
+                <div class="tag-list">
+                  <span>Dev Containers</span>
+                  <span>Docker Compose</span>
+                  <span>IaC</span>
+                </div>
+                <a
+                  class="project-link"
+                  href="https://github.com/martinmendoza93/dev-methodology-blueprint"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Ver repositorio</a
+                >
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -159,13 +325,25 @@
 
     <footer id="contacto" class="site-footer">
       <div class="container footer-content">
-        <div>
+        <div class="footer-brand">
           <a class="brand" href="#home">MM.</a>
-          <p>© <span id="year"></span> Martín Mendoza. Managua, Nicaragua.</p>
+          <p>
+            © <span id="year"></span> Martín Mendoza. Managua, Nicaragua.
+          </p>
         </div>
         <div class="footer-links">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/martinmendoza93" target="_blank" rel="noreferrer">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/martin-antonio-mendoza"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/martinmendoza93"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          >
           <a href="mailto:martinmendoza93@gmail.com">Enviar email</a>
         </div>
       </div>
